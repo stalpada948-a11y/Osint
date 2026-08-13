@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Navbar from "@/components/Navbar"; // Top import
 
 const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://osint-backend-ie6l.onrender.com";
 
@@ -50,6 +51,9 @@ export default function Home() {
       alignItems: "center"
     }}>
       
+      {/* Navigation Bar Header */}
+      <Navbar />
+
       {/* Header Section */}
       <header style={{
         textAlign: "center",
@@ -255,5 +259,4 @@ export default function Home() {
 
     </div>
   );
-            }
-                
+        }
