@@ -6,7 +6,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
 
-  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://127.0.0.1:8000";
+  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://osint-backend-ie6l.onrender.com";
 
   const handleSearch = async (e) => {
     e.preventDefault();
